@@ -1,23 +1,14 @@
 public class Frequiencies {
-    static void printFreq(int arr[], int n)
-    {
-        int freq = 1, i = 1;
-
-        while(i < n)
-        {
-            while(i < n && arr[i] == arr[i - 1])
-            {
-                freq++;
-                i++;
+    static void printFreq(int arr[], int n) {
+        int count =0;
+        for(int i=0;i<n-1;i++){
+            if(arr[i]==arr[i+1]){
+                count++;
+                System.out.println(arr[i]+" count is" + count);
             }
 
-            System.out.println(arr[i - 1] + " " + freq);
-
-            i++;
-            freq = 1;
         }
     }
-
 
     public static void main(String args[])
     {
