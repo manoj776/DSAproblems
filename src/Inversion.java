@@ -44,5 +44,5 @@ public class Inversion {
         while(j<n2)
             arr[k++]=right[j++];
         return res;
-    }
+    }L
 }
